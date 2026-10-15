@@ -1,0 +1,36 @@
+/* ═══════════════════════════════════════════════════════════
+   粘贴到 VS Code 设置 markdown-pdf.styles 所指定的 CSS 文件中
+   （或直接作为该设置指向的文件内容）
+   作用：① 缩小表格 ② 消除页尾大片留白 ③ 压缩字号边距
+   ═══════════════════════════════════════════════════════════ */
+
+@media print {
+  @page { size: A4; margin: 12mm 11mm; }        /* 默认 20mm，收紧以增加容量 */
+  body { font-size: 9.5pt; line-height: 1.5; }  /* 默认约 14pt */
+
+  h1 { font-size: 15pt; }
+  h2 { font-size: 12pt; margin: 12pt 0 5pt; page-break-after: avoid; break-after: avoid; }
+  h3 { font-size: 10.5pt; margin: 9pt 0 4pt; page-break-after: avoid; break-after: avoid; }
+  h4 { font-size: 10pt; page-break-after: avoid; break-after: avoid; }
+  p  { margin: 4pt 0; orphans: 2; widows: 2; }
+
+  /* ── ① 表格缩小：字号 8pt、内边距压到 1.6pt ── */
+  table { font-size: 8pt; margin: 5pt 0;
+          page-break-inside: auto; break-inside: auto; }   /* 允许跨页 */
+  th, td { padding: 1.6pt 3.6pt; line-height: 1.25; }
+  thead { display: table-header-group; }                    /* 跨页自动重复表头 */
+  tr { page-break-inside: avoid; break-inside: avoid; }     /* 单行不拆开 */
+
+  /* ── ② 消除页尾留白：代码块与引用块允许被拆分 ── */
+  pre { font-size: 7.6pt; padding: 5pt 7pt;
+        page-break-inside: auto; break-inside: auto; }
+  blockquote { page-break-inside: auto; break-inside: auto;
+               padding: 5pt 9pt; margin: 5pt 0; }
+  ul, ol { margin: 4pt 0; }
+
+  /* ── ③ 图整块不拆，但上下间距压到最小 ── */
+  .figure, figure { margin: 7pt 0; padding: 5pt;
+                    page-break-inside: avoid; break-inside: avoid; }
+
+  h2, h3, h4 { page-break-inside: avoid; }
+}

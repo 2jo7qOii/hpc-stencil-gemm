@@ -1,0 +1,10 @@
+{
+  "markdown-pdf.fontSize": "10",
+  "markdown-pdf.margin.top": "12mm",
+  "markdown-pdf.margin.bottom": "12mm",
+  "markdown-pdf.margin.left": "11mm",
+  "markdown-pdf.margin.right": "11mm",
+  "markdown-pdf.styles": [
+    "/home/jojo0220/桌面/HPC/HPC第二关/report/打印优化.css"
+  ]
+}

@@ -1,0 +1,22 @@
+# ── 依赖与缓存：体积大且可重建，不纳入版本控制 ──
+node_modules/
+.npmcache/
+__pycache__/
+*.pyc
+
+# ── 编译产物：可由源码重新编译 ──
+stencil
+gemm
+stencil-noavx
+*.o
+*.out
+
+# ── 编辑器 / 系统 ──
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# ── 临时文件 ──
+*.tmp
+*~

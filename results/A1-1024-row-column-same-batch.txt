@@ -1,0 +1,27 @@
+stencil impl=row h=1024 w=1024 steps=20 seed=2026 warmup=1 threads=1
+check=PASS max_abs_error=1.44279e-07 checksum=519158
+check=PASS max_abs_error=1.44279e-07 checksum=519158
+sample=0 compute_ms=32.2062
+check=PASS max_abs_error=1.44279e-07 checksum=519158
+sample=1 compute_ms=34.6954
+check=PASS max_abs_error=1.44279e-07 checksum=519158
+sample=2 compute_ms=34.9337
+check=PASS max_abs_error=1.44279e-07 checksum=519158
+sample=3 compute_ms=34.8139
+check=PASS max_abs_error=1.44279e-07 checksum=519158
+sample=4 compute_ms=35.6431
+samples=5 mean_ms=34.4584 median_ms=34.8139 stddev_ms=1.17342 min_ms=32.2062 max_ms=35.6431 stddev_kind=population throughput_time=median GUpdates/s=0.600038 GFLOP/s=3.60023 effective_bandwidth_GB/s=4.8003 bandwidth_model=ideal_spatial_reuse bytes_per_update=8
+
+stencil impl=column h=1024 w=1024 steps=20 seed=2026 warmup=1 threads=1
+check=PASS max_abs_error=1.44279e-07 checksum=519158
+check=PASS max_abs_error=1.44279e-07 checksum=519158
+sample=0 compute_ms=672.108
+check=PASS max_abs_error=1.44279e-07 checksum=519158
+sample=1 compute_ms=668.348
+check=PASS max_abs_error=1.44279e-07 checksum=519158
+sample=2 compute_ms=667.755
+check=PASS max_abs_error=1.44279e-07 checksum=519158
+sample=3 compute_ms=668.822
+check=PASS max_abs_error=1.44279e-07 checksum=519158
+sample=4 compute_ms=666.075
+samples=5 mean_ms=668.621 median_ms=668.348 stddev_ms=1.9751 min_ms=666.075 max_ms=672.108 stddev_kind=population throughput_time=median GUpdates/s=0.0312557 GFLOP/s=0.187534 effective_bandwidth_GB/s=0.250045 bandwidth_model=ideal_spatial_reuse bytes_per_update=8

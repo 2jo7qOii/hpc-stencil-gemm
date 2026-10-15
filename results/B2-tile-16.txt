@@ -1,0 +1,13 @@
+gemm impl=blocked n=512 tile=16 seed=2026 warmup=1 threads=1
+check=PASS max_abs_error=0.000191983 checksum=3.3519e+07
+check=PASS max_abs_error=0.000191983 checksum=3.3519e+07
+sample=0 compute_ms=111.56
+check=PASS max_abs_error=0.000191983 checksum=3.3519e+07
+sample=1 compute_ms=110.402
+check=PASS max_abs_error=0.000191983 checksum=3.3519e+07
+sample=2 compute_ms=110.376
+check=PASS max_abs_error=0.000191983 checksum=3.3519e+07
+sample=3 compute_ms=110.212
+check=PASS max_abs_error=0.000191983 checksum=3.3519e+07
+sample=4 compute_ms=110.088
+samples=5 mean_ms=110.528 median_ms=110.376 stddev_ms=0.528664 min_ms=110.088 max_ms=111.56 stddev_kind=population GFLOP/s=2.432

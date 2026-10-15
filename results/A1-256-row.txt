@@ -1,0 +1,13 @@
+stencil impl=row h=256 w=256 steps=20 seed=2026 warmup=1 threads=1
+check=PASS max_abs_error=1.19519e-07 checksum=31647.2
+check=PASS max_abs_error=1.19519e-07 checksum=31647.2
+sample=0 compute_ms=1.93275
+check=PASS max_abs_error=1.19519e-07 checksum=31647.2
+sample=1 compute_ms=1.99371
+check=PASS max_abs_error=1.19519e-07 checksum=31647.2
+sample=2 compute_ms=1.70406
+check=PASS max_abs_error=1.19519e-07 checksum=31647.2
+sample=3 compute_ms=1.62234
+check=PASS max_abs_error=1.19519e-07 checksum=31647.2
+sample=4 compute_ms=1.63035
+samples=5 mean_ms=1.77664 median_ms=1.70406 stddev_ms=0.156183 min_ms=1.62234 max_ms=1.99371 stddev_kind=population throughput_time=median GUpdates/s=0.757204 GFLOP/s=4.54322 effective_bandwidth_GB/s=6.05763 bandwidth_model=ideal_spatial_reuse bytes_per_update=8
