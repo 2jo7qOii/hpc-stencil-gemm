@@ -57,11 +57,4 @@ g++ -std=c++17 -O2 -march=native -o gemm    gemm.cpp
 
 **注意**：报告中的耗时数据受移动平台热降频影响，同一二进制的 `stencil row` 中位数在不同批次间相差约 21%，故结论基于**同批次配对数据**，不跨批次比较绝对耗时。
 
-## 重新生成报告
 
-```bash
-cd report
-npm install jsdom          # 首次
-node mkfull.mjs            # 生成 full.html
-# 浏览器打开 full.html → Ctrl+P → 另存为 PDF
-```
